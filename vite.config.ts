@@ -19,6 +19,11 @@ export default defineConfig({
     environment: 'node',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
-    coverage: { reportsDirectory: './coverage/std', provider: 'v8' },
-  },
+    coverage: { reportsDirectory: './coverage/std', provider: 'v8', exclude: [
+        "**/*/index.ts",
+        "**/*/index.js",
+        ".nx/**"
+      ]
+    },  },
+
 });

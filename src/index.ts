@@ -1,1 +1,1 @@
-export * from './lib/std';
+export * from './lib';

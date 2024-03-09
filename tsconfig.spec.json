@@ -10,6 +10,10 @@
       "vitest"
     ]
   },
+  "exclude": [
+    "src/**/index.ts",
+    "src/**/index.js"
+  ],
   "include": [
     "vite.config.ts",
     "vitest.config.ts",
